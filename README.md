@@ -11,7 +11,8 @@ Iniciar la api `$ node server.js`
 Su aplicación se ejectura en el  `http//localhost:3000`
 
 # endpoits Servicios 
-- Metodo `GET` http://localhost:3000/api/servicios Obtine el listado se servicios del SPA
+- Metodo `GET` http://localhost:3000/api/servicios Obtine el listado de servicios del SPA
+## response
 ```js
 [
     {
@@ -40,7 +41,8 @@ Su aplicación se ejectura en el  `http//localhost:3000`
     }
 ]
 ```
-- Metodo `GET` http://localhost:3000/api/servicios/`:id` ejemplo http://localhost:3000/api/servicios/5e680cf35c1b5f3e38ff3d4d
+- Metodo `GET` http://localhost:3000/api/servicios/`:id` Obtiene servicio por id ejemplo http://localhost:3000/api/servicios/5e680cf35c1b5f3e38ff3d4d
+## response
 ```js
 {
     "diasServicio": [
@@ -55,8 +57,8 @@ Su aplicación se ejectura en el  `http//localhost:3000`
     "__v": 0
 }
 ```
-- Metodo `POST` http://localhost:3000/api/servicios/
-
+- Metodo `POST` http://localhost:3000/api/servicios/ Crea un servicio
+## request
 ```js
 {
 	"nombre": "Prueba",
@@ -65,8 +67,8 @@ Su aplicación se ejectura en el  `http//localhost:3000`
 	"diasServicio":["Lunes","Martes"]
 }
 ```
-- Metodo `PUT` http://localhost:3000/api/servicios/`:id` ejemplo http://localhost:3000/api/servicios/5e680cf35c1b5f3e38ff3d4d
-
+- Metodo `PUT` http://localhost:3000/api/servicios/`:id` Modifica Servicio por id ejemplo http://localhost:3000/api/servicios/5e680cf35c1b5f3e38ff3d4d
+## request
 ```js
 {
 	"nombre": "Prueba Modificada",
@@ -75,6 +77,6 @@ Su aplicación se ejectura en el  `http//localhost:3000`
 	"diasServicio":["Lunes","Martes"]
 }
 ```
-- Metodo `DELETE` http://localhost:3000/api/servicios/`:id` ejemplo http://localhost:3000/api/servicios/5e680cf35c1b5f3e38ff3d4d
+- Metodo `DELETE` http://localhost:3000/api/servicios/`:id` Elimina Servicio pro id ejemplo http://localhost:3000/api/servicios/5e680cf35c1b5f3e38ff3d4d
 
 
