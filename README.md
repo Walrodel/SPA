@@ -2,16 +2,16 @@
 
 Api REST  usando NodeJs, ExpressJs, MongoDB
 
-# Instalacion
+# Instalación
 
 -Ejecute el comando `$ npm install`
 
 Iniciar la api `$ node server.js`
 
-Su aplicación se ejectura en el  `http//localhost:3000`
+Su aplicación se ejecutará en `http//localhost:3000`
 
-# endpoits Servicios 
-- Metodo `GET` http://localhost:3000/api/servicios Obtine el listado de Servicios del SPA
+# endpoint Servicios 
+- Método `GET` http://localhost:3000/api/servicios Obtiene el listado de Servicios del SPA
 ## response
 ```js
 [
@@ -41,7 +41,7 @@ Su aplicación se ejectura en el  `http//localhost:3000`
     }
 ]
 ```
-- Metodo `GET` http://localhost:3000/api/servicios/:id Obtiene servicio por id ejemplo http://localhost:3000/api/servicios/5e680cf35c1b5f3e38ff3d4d
+- Método `GET` http://localhost:3000/api/servicios/:id Obtiene un servicio por id ejemplo http://localhost:3000/api/servicios/5e680cf35c1b5f3e38ff3d4d
 ## response
 ```js
 {
@@ -57,7 +57,7 @@ Su aplicación se ejectura en el  `http//localhost:3000`
     "__v": 0
 }
 ```
-- Metodo `POST` http://localhost:3000/api/servicios/ Crea un servicio en el SPA
+- Método `POST` http://localhost:3000/api/servicios/ Crea un servicio en el SPA
 ## request
 ```js
 {
@@ -67,7 +67,7 @@ Su aplicación se ejectura en el  `http//localhost:3000`
 	"diasServicio":["Lunes","Martes"]
 }
 ```
-- Metodo `PUT` http://localhost:3000/api/servicios/:id Modifica Servicio por id ejemplo http://localhost:3000/api/servicios/5e680cf35c1b5f3e38ff3d4d
+- Método `PUT` http://localhost:3000/api/servicios/:id Modifica un Servicio por id ejemplo http://localhost:3000/api/servicios/5e680cf35c1b5f3e38ff3d4d
 ## request
 ```js
 {
@@ -77,15 +77,15 @@ Su aplicación se ejectura en el  `http//localhost:3000`
 	"diasServicio":["Lunes","Martes"]
 }
 ```
-- Metodo `DELETE` http://localhost:3000/api/servicios/:id Elimina Servicio por id ejemplo http://localhost:3000/api/servicios/5e680cf35c1b5f3e38ff3d4d
+- Método `DELETE` http://localhost:3000/api/servicios/:id Elimina un Servicio por id ejemplo http://localhost:3000/api/servicios/5e680cf35c1b5f3e38ff3d4d
 
-# endpoits Reservas
-- Metodo `GET` http://localhost:3000/api/reservas Obtine un listado de Reservas del SPA dado un rango de fechas.
-Nota: si no se especifica fechas obtine todas las Reservas
+# endpoint Reservas
+- Método `GET` http://localhost:3000/api/reservas Obtine un listado de Reservas del SPA dado un rango de fechas.
+### Nota: si no se especifica fechas obtine todas las Reservas
 
-## Params 
-- `startDate` "yyyy-mm-dd" Fecha inicial
-- `endDate` "yyyy-mm-dd" Fecha Final
+## Parámetros 
+- `startDate` Fecha inicial en el formato yyyy-mm-dd 
+- `endDate` Fecha Final en el formato yyyy-mm-dd 
 
 http://localhost:3000/api/reservas?startDate=2020-01-01&endDaate=2020-03-10
 ## response
@@ -107,7 +107,7 @@ http://localhost:3000/api/reservas?startDate=2020-01-01&endDaate=2020-03-10
     }
 ]
 ```
-- Metodo `POST` http://localhost:3000/api/reservas Crea una Reserva
+- Método `POST` http://localhost:3000/api/reservas Crea una Reserva
 ## request
 ```js
 {
@@ -115,5 +115,5 @@ http://localhost:3000/api/reservas?startDate=2020-01-01&endDaate=2020-03-10
 	"fecha":"2020-03-11"
 }
 ```
-- Metodo `DELETE` http://localhost:3000/api/reservas/:id Elimina una Reserva por id ejemplo http://localhost:3000/api/reservas/5e680cf35c1b5f3e38ff3d4d
+- Método `DELETE` http://localhost:3000/api/reservas/:id Elimina una Reserva por id ejemplo http://localhost:3000/api/reservas/5e680cf35c1b5f3e38ff3d4d
 
