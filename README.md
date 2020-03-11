@@ -81,7 +81,7 @@ Su aplicación se ejecutará en `http//localhost:3000`
 
 # endpoint Reservas
 - Método `GET` http://localhost:3000/api/reservas Obtine un listado de Reservas del SPA dado un rango de fechas.
-### Nota: si no se especifica fechas obtine todas las Reservas
+#### Nota: si no se específica fechas obtiene todas las Reservas
 
 ## Parámetros 
 - `startDate` Fecha inicial en el formato yyyy-mm-dd 
