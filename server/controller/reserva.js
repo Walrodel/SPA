@@ -105,7 +105,7 @@ exports.delete = function (req, res) {
         }
         if (response) {
             if (response.n === 1 && response.ok === 1) {
-                res.status(202).send(body);
+                res.status(202).send(response);
             }
             if (response.n === 0 && response.ok === 1) {
                 res.status(204).send({
